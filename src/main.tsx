@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react';
 import {createRoot} from 'react-dom/client';
-import {Content,Project,Post,seed,loadContent,STORAGE_KEY} from './data';
+import {Content,seed,loadContent,STORAGE_KEY} from './data';
 import './style.css';
 
 function go(path:string){window.history.pushState({},'',path);window.dispatchEvent(new Event('popstate'));window.scrollTo({top:0,behavior:'smooth'});}
